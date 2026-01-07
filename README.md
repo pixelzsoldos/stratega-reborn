@@ -95,6 +95,3 @@ A projekt a következő színsémát használja:
 - Kiemelések: `#366` (sötét kék-zöld)
 - Fény szöveg: `#dcdcdc` (gainsboro)
 
-## Licenc
-
-Copyright © Stratega Reborn Team - 2025. Minden jog fenntartva.
