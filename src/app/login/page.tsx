@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { useTheme } from '@/components/theme/ThemeProvider'
 import SectionCard from '@/components/ui/SectionCard'
+import Logo from '@/components/ui/Logo'
 
 export default function LoginPage() {
   const { palette } = useTheme()
@@ -33,8 +34,10 @@ export default function LoginPage() {
         jelszo43: loginForm.password,
       }
       console.log('Login submit (demo):', payload)
-      // Navigáció az összesítő oldalra (demo)
-      if (typeof window !== 'undefined') window.location.href = '/osszesites'
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('sr_logged_in', '1')
+        window.location.href = '/game'
+      }
     } finally {
       setSubmittingLogin(false)
     }
@@ -67,9 +70,9 @@ export default function LoginPage() {
       fontFamily: 'Verdana, Arial, Helvetica, sans-serif',
     }}>
       <div style={{ maxWidth: 600, margin: '0 auto', padding: '2rem 1rem' }}>
-        <h1 style={{ color: palette.link, textAlign: 'center', marginBottom: '1.5rem' }}>Belépés</h1>
+        <Logo />
 
-        <SectionCard title="Bejelentkezés">
+        <SectionCard>
           <form onSubmit={onLoginSubmit} noValidate>
             <div style={{ display: 'grid', gap: 12 }}>
               <label>
@@ -100,7 +103,7 @@ export default function LoginPage() {
 
         <div style={{ height: 16 }} />
 
-        <SectionCard title="Elfelejtett jelszó">
+        <SectionCard>
           <form onSubmit={onForgotSubmit} noValidate>
             <div style={{ display: 'grid', gap: 12 }}>
               <div>Ha elfelejtetted a jelszavadat, add meg az E-mail-edet:</div>

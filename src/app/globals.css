@@ -11,9 +11,35 @@ body {
 }
 
 body {
-  background-color: #111;
-  color: #a9a9a9;
+  background-color: var(--bg, #111);
+  color: var(--text, #a9a9a9);
   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Legacy-style layout helpers */
+.dmain { width: 100%; min-height: 100vh; }
+.dtop { width: 100%; padding: 0.5rem 1rem; border-bottom: 2px solid var(--border, #333); }
+.table1 { width: 100%; }
+.tabmenu { width: 260px; }
+.tekercs { max-width: 900px; width: 100%; margin: 0 auto; }
+.tabla { width: 100%; }
+.tabla1 { width: 100%; border: 1px solid var(--border, #333); background: var(--cardBg, #1a1a1a); }
+.tabla4 { width: 100%; border-collapse: collapse; }
+.fejlec { background: var(--cardBg, #1a1a1a); color: var(--lightText, #dcdcdc); border-bottom: 1px solid var(--accent, #366); font-weight: bold; text-align: center; padding: 8px; }
+.szoveg { color: var(--text, #a9a9a9); }
+
+/* Links */
+.toplink, .sublink { color: var(--link, #5f9ea0); text-decoration: none; }
+.toplink:hover, .sublink:hover { color: var(--hover, #696969); }
+
+/* Simple grid helpers for forms */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.form-grid label { display: block; }
+.form-grid input, .form-grid select { width: 100%; padding: 8px; background: var(--cardBg, #1a1a1a); border: 1px solid var(--border, #333); color: var(--lightText, #dcdcdc); }
+
+@media (max-width: 700px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .tabmenu { width: 200px; }
 }
 
 a {

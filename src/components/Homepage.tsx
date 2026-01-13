@@ -52,17 +52,18 @@ export default function Homepage() {
             padding: '0 1em',
             boxSizing: 'border-box'
           }}>
-            <SectionCard title={t.account}>
+            <SectionCard>
               <LinkItem href="/login">{t.login}</LinkItem>
               <LinkItem href="/register">{t.register}</LinkItem>
             </SectionCard>
 
             <div style={{ height: 16 }} />
 
-            <SectionCard title={t.information}>
+            <SectionCard>
               <LinkItem href="/story">{t.legend}</LinkItem>
               <LinkItem href="/sugo">{t.guide}</LinkItem>
               <LinkItem href="/jatekszabaly">{t.rules}</LinkItem>
+              <LinkItem href="/game">Játék</LinkItem>
             </SectionCard>
           </div>
 

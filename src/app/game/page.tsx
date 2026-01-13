@@ -1,10 +1,33 @@
 "use client"
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTheme } from '@/components/theme/ThemeProvider'
 
 export default function GamePage() {
   const { palette } = useTheme()
+  const [countryName, setCountryName] = useState('van 5 szabad percem')
+  const [raceName, setRaceName] = useState('Törpe')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const logged = localStorage.getItem('sr_logged_in')
+      if (!logged) {
+        window.location.href = '/login'
+        return
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    try {
+      const cn = typeof window !== 'undefined' ? localStorage.getItem('sr_countryName') : null
+      const rLabel = typeof window !== 'undefined' ? localStorage.getItem('sr_raceLabel') : null
+      const r = typeof window !== 'undefined' ? localStorage.getItem('sr_race') : null
+      if (cn) setCountryName(cn)
+      if (rLabel) setRaceName(rLabel)
+      else if (r) setRaceName(r)
+    } catch {}
+  }, [])
 
   const tableStyle: React.CSSProperties = {
     width: '100%',
@@ -49,8 +72,8 @@ export default function GamePage() {
           margin: '0 auto'
         }}>
           <div style={{ minWidth: 220 }}>
-            <div style={{ fontWeight: 'bold', color: palette.lightText }}>van 5 szabad percem (ID: 147006, #691)</div>
-            <div style={{ color: palette.hover }}>Faj: Törpe</div>
+            <div style={{ fontWeight: 'bold', color: palette.lightText }}>{countryName}</div>
+            <div style={{ color: palette.hover }}>Faj: {raceName}</div>
           </div>
           <div style={{ flex: 1, overflowX: 'auto' }}>
             <table style={tableStyle}>
@@ -63,7 +86,7 @@ export default function GamePage() {
               </thead>
               <tbody>
                 <tr>
-                  {['1 215 615','6324','2347','3660','2663','690','297','4767','100','***','65 398','~⏱'].map((v, i) => (
+                  {['1 215 615','6324','2347','3660','2663','690','297','4767','100','***','65 398','00:00'].map((v, i) => (
                     <td key={i} style={{ ...tdStyle, textAlign: [1,2,3,4,7,8,10].includes(i) ? 'right' : 'left' }}>{v}</td>
                   ))}
                 </tr>
@@ -119,7 +142,7 @@ export default function GamePage() {
               <li>Játékszabályzat</li>
             </ul>
             <hr style={{ borderColor: palette.border, opacity: 0.4 }} />
-            <div>Kilépés</div>
+            <button onClick={() => { if (typeof window !== 'undefined') { localStorage.clear(); window.location.href = '/login' } }} style={{ width: '100%', padding: '8px', marginTop: 8, background: '#402', color: palette.lightText, border: `1px solid ${palette.border}`, cursor: 'pointer' }}>Kijelentkezés</button>
           </nav>
         </aside>
 

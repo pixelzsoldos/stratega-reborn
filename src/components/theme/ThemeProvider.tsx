@@ -65,7 +65,22 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
 
   return (
     <ThemeContext.Provider value={value}>
-      {children}
+      <div
+        style={{
+          // CSS variables to be used in globals.css
+          // applied via inline style on a wrapper
+          ['--bg' as any]: palettes[paletteName].background,
+          ['--text' as any]: palettes[paletteName].text,
+          ['--link' as any]: palettes[paletteName].link,
+          ['--hover' as any]: palettes[paletteName].hover,
+          ['--accent' as any]: palettes[paletteName].accent,
+          ['--lightText' as any]: palettes[paletteName].lightText,
+          ['--cardBg' as any]: palettes[paletteName].cardBg,
+          ['--border' as any]: palettes[paletteName].border,
+        } as React.CSSProperties}
+      >
+        {children}
+      </div>
     </ThemeContext.Provider>
   )
 }
