@@ -1,0 +1,20 @@
+site_name: Stratega Reborn
+theme:
+  name: material
+  locale: hu
+  features:
+    - navigation.expand 
+nav:
+  - 'index.md'
+  - 'help.md'
+  - 'story.md'
+  - Fajok:
+      - 'race/elf.md'
+      - 'race/dwarf.md'
+      - 'race/human.md'
+      - 'race/undead.md'
+      - 'race/darkelf.md'
+      - 'race/ork.md'
+  - 'faq.md'
+  - 'rules.md'
+  - 'fmsz.md'
