@@ -134,7 +134,7 @@ Részletes játékmechanika leírás:
 - [Szabályok](docs/rules.md) - Játékszabályok
 - [GYIK](docs/faq.md) - Gyakran ismételt kérdések
 - [Legenda](docs/story.md) - Háttértörténet
-- [Fajok](docs/race/) - Részletes fajleírások
+- [Fajok](docs/races.md) - Részletes fajleírások
 
 Fejlesztői dokumentáció:
 - [Technikai áttekintés](docs/index.md)
