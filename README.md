@@ -1,147 +1,192 @@
-# Stratega Reborn
+# 🏰 Stratega Reborn
 
-A **Stratega Reborn** egy klasszikus, böngészőalapú, körökre osztott (turn-based) fantasy stratégiai játék újragondolt, modern technológiai alapokra helyezett változata. A projekt célja egy komplex gazdasági–katonai–mágikus rendszerrel rendelkező online játék létrehozása, amely hosszú távú stratégiai gondolkodást, tervezést és taktikai döntéshozatalt igényel.
+A klasszikus **[stratega.hu](https://stratega.hu)** böngészős stratégiai játék modernizált változata. Egy fantasy világban játszódó köralapú (turn-based) építkezős-fejlesztős háborús stratégiai játék, ahol az elfek, törpék, emberek, élőholtak, sötételfek és orkok fajai között választhatsz, és saját birodalmat építhetsz fel.
 
-A játék szellemiségében a régi iskolás browser MMO-kat idézi, miközben mai fejlesztői eszközökkel, skálázható backenddel és modern frontenddel készül.
+## 🌟 Főbb jellemzők
 
----
+- **Köralapú játékmenet**: ~20 perc/kör, 4 hónapos fordulók
+- **6 játszható faj**: Elf, Törpe, Ember, Élőholt, Sötételf, Ork
+- **Komplex gazdaság**: Épületek, nyersanyagok, arany, mana
+- **Hadviselés**: Egységek kiképzése, csaták, területfoglalás
+- **Mágia**: Varázslatok, tekercsek, amulettek, varázstárgyak
+- **Klánrendszer**: Szövetségek, közös erőforrások
+- **Győzelmi pontok (GyP)**: Szintlépés, új egységek és varázslatok feloldása
+- **Modern technológiák**: React, Next.js, TypeScript, NestJS
 
-## 🎮 A játékról röviden
-
-* **Műfaj:** Körökre osztott online stratégiai játék
-* **Köridő:** Jellemzően 20 perc (epizód- és fordulófüggő)
-* **Fő elemek:**
-
-  * Országépítés és gazdaság
-  * Egységek képzése és hadműveletek
-  * Varázslatok és mágikus rendszerek
-  * Piac és kereskedelem
-  * Automatizmusok és prioritáskezelés
-  * Epizód alapú rangsorok és resetek
-
-A játékban minden esemény szerveroldalon, körváltásokhoz kötve történik. A játékos döntései hosszú távon hatnak az ország fejlődésére.
-
----
-
-## 🧠 Alap koncepció
-
-A játékos egy **országot** irányít egy fantasy világban. A cél:
-
-* stabil gazdaság kiépítése,
-* erős hadsereg fenntartása,
-* varázslatok és mágikus tárgyak használata,
-* más országokkal való háborúzás vagy együttműködés,
-* epizódon belül minél jobb pozíció elérése.
-
-A játék egyik kulcseleme a **prioritásrendszer**: nem minden fér bele egyszerre, az erőforrásokat okosan kell elosztani.
-
----
-
-## 🏗 Projekt felépítése
-
-A repository monorepo jellegű:
+## 🏗️ Projekt struktúra
 
 ```
-/stratega-reborn
-├── client/        # Frontend (Next.js / React)
-├── server/        # Backend (Node.js / NestJS)
-├── docs/          # Dokumentáció
-│   └── help.md    # Részletes játékleírás és szabályrendszer
+stratega-reborn/
+├── client/              # Frontend (Next.js + React + TypeScript)
+│   ├── app/            # Next.js app router oldalak
+│   ├── components/     # Újrafelhasználható UI komponensek
+│   ├── locales/        # Többnyelvűség (hu, en)
+│   └── types/          # TypeScript típusdefiníciók
+├── server/             # Backend (NestJS + Node.js) - tervezett
+├── docs/               # Dokumentáció
+│   ├── help.md        # Játékos súgó
+│   ├── rules.md       # Játékszabályok
+│   ├── faq.md         # Gyakran ismételt kérdések
+│   ├── story.md       # Háttértörténet
+│   └── race/          # Fajok részletes leírása
 └── README.md
 ```
 
----
+## 🚀 Gyors kezdés
+
+### Követelmények
+
+- Node.js 18+ 
+- npm vagy yarn
+
+### Telepítés és indítás
+
+```bash
+# Klónozás
+git clone https://github.com/yourusername/stratega-reborn.git
+cd stratega-reborn
+
+# Függőségek telepítése
+cd client
+npm install
+
+# Fejlesztői szerver indítása
+npm run dev
+```
+
+A játék elérhető lesz: `http://localhost:3000`
+
+## 🎮 Játékmenet áttekintés
+
+### Kezdés
+
+1. **Regisztráció**: Válassz fajt, országnevet és alapadatokat
+2. **Védett kezdés**: Az első 100 kör védelemmel indul
+3. **Gazdaság kiépítése**: Építs épületeket, termelj nyersanyagokat
+4. **Seregépítés**: Képezz egységeket a barakkokban
+5. **Fejlődés**: Szerezz GyP-t csatákban, lépj szintet
+
+### Főbb játékelemek
+
+**Épületek:**
+- Raktár, Kincstár, Könyvtár
+- Falu, Tanya (népesség, étel)
+- Bányák (fa, kő, fém)
+- Manaforrás, Varázslótorony
+- Barakk, Erőd (katonák)
+
+**Erőforrások:**
+- Arany, Gabona, Fa, Kő, Fém, Mana
+
+**Csaták:**
+- Támadás földért, aranyért, nyersanyagért
+- Rablás, lopás
+- Támogató seregek
+- GyP szerzése
+
+**Mágia:**
+- Gazdasági varázslatok
+- Harci varázslatok
+- Varázsgömb (kémkedés)
+- Amulettek és varázstárgyak
+
+## 🛠️ Fejlesztés
+
+### Frontend technológiák
+
+- **Framework**: Next.js 14 (App Router)
+- **UI**: React 18 + TypeScript
+- **Styling**: CSS-in-JS (inline styles), Theme Provider
+- **Többnyelvűség**: react-i18next
+- **Állapotkezelés**: React Context API
+
+### Tervezett backend
+
+- **Framework**: NestJS
+- **Database**: PostgreSQL + Prisma ORM
+- **API**: RESTful + WebSocket (valós idejű frissítések)
+- **Autentikáció**: JWT
+
+### Kulcsfontosságú komponensek
+
+```typescript
+// Témarendszer
+<ThemeProvider>
+  // Világos/sötét témák, paletta kezelés
+</ThemeProvider>
+
+// Többnyelvűség
+translations = {
+  hu: { /* magyar szövegek */ },
+  en: { /* english texts */ }
+}
+
+// Játék státusz
+- GyP (Győzelmi Pontok)
+- Erőforrások (arany, mana, nyersanyagok)
+- Épületek, egységek, varázslatok
+```
 
 ## 📚 Dokumentáció
 
-A projekt részletes leírása és a játék teljes szabályrendszere külön dokumentumokban található, hogy a README könnyen áttekinthető maradjon.
+Részletes játékmechanika leírás:
+- [Súgó](docs/help.md) - Játékos kézikönyv
+- [Szabályok](docs/rules.md) - Játékszabályok
+- [GYIK](docs/faq.md) - Gyakran ismételt kérdések
+- [Legenda](docs/story.md) - Háttértörténet
+- [Fajok](docs/race/) - Részletes fajleírások
 
-Elérhető dokumentációk:
+Fejlesztői dokumentáció:
+- [Technikai áttekintés](docs/index.md)
 
-* 📖 **Játéksúgó és részletes mechanikák:** [`docs/help.md`](docs/help.md)
+## 🎯 Fejlesztési roadmap
 
-  * gazdaság, prioritások, egységek, varázslatok, hadműveletek
-  * amulettek, automatizmusok, piac, véletlen események
+### ✅ Kész
+- Frontend alap struktúra
+- Belépés / Regisztráció UI
+- Játék trónterem oldal (demo adatokkal)
+- Többnyelvűség (magyar/angol)
+- Témarendszer
+- Dokumentáció
 
-* 🌍 **Történet és világ (Story):** [`docs/story.md`](docs/story.md)
+### 🚧 Folyamatban
+- Backend API fejlesztés
+- Adatbázis séma
+- Játéklogika implementáció
 
-  * a Stratega világának háttere
-  * fajok, világkép, hangulat és lore
-
-* 📜 **Játékszabályok:** `docs/rules.md`
-
-  * alapvető játékszabályok
-  * fair play irányelvek
-  * technikai és gameplay korlátozások
-
-Ez a README szándékosan csak **áttekintést** ad; a részletes leírások a `docs/` mappában találhatók.
-
----
-
-## 🗺 Roadmap
-
-### 1. Alapok (Core MVP)
-
-* [ ] Felhasználókezelés (regisztráció, belépés)
-* [ ] Ország entitás és alapadatok
-* [ ] Körkezelő (turn engine)
-* [ ] Gazdasági termelés és fenntartás
-* [ ] Prioritásrendszer implementálása
-
-### 2. Katonai rendszer
-
-* [ ] Egységek és képzés
-* [ ] Dezertálás logika
-* [ ] Hadműveletek indítása
-* [ ] Alap csatarendszer
-
-### 3. Mágia és varázslatok
-
-* [ ] Varázslatok típusai
-* [ ] Mana- és toronykezelés
-* [ ] Információs varázslatok
-
-### 4. Piac és automatizmusok
-
-* [ ] Nyersanyag- és egységpiac
-* [ ] Cserebere piac
-* [ ] Intéző (automata vásárlás, képzés)
-
-### 5. Haladó rendszerek
-
-* [ ] Amulettek és hősök
-* [ ] Véletlen események
-* [ ] Klánok
-* [ ] Epizódok, ranglisták, resetek
-
----
-
-## ⚙️ Technológiai irány (tervezett)
-
-* **Frontend:** Next.js, React, TypeScript
-* **Backend:** Node.js, NestJS
-* **Adatbázis:** PostgreSQL + Prisma
-* **Kommunikáció:** REST / WebSocket (körfrissítések)
-* **Infra:** Docker, később VPS / Proxmox
-
----
-
-## 🚧 Projekt státusz
-
-A projekt **aktív fejlesztés alatt áll**, elsősorban hobbi / tanulási / kísérleti céllal. A fókusz a stabil játékmenet és a tiszta, jól bővíthető architektúra kialakításán van.
-
----
+### 📋 Tervezett
+- Valós adatbázis integráció
+- Körvezérlő rendszer
+- Csatalogika
+- Varázslat mechanika
+- Klánrendszer
+- Piactér
+- Admin felület
 
 ## 🤝 Közreműködés
 
-Jelenleg a projekt **zárt fejlesztésű**, de a kód és a dokumentáció szabadon böngészhető. Később nyitottabb fejlesztési modell is elképzelhető.
+Közreműködők várhatóak! Ha szeretnél hozzájárulni:
+
+1. Fork-old a repót
+2. Hozz létre egy feature branch-et (`git checkout -b feature/AmazingFeature`)
+3. Commit-old a változásokat (`git commit -m 'Add some AmazingFeature'`)
+4. Push-old a branch-et (`git push origin feature/AmazingFeature`)
+5. Nyiss egy Pull Request-et
+
+## 📄 Licensz
+
+Ez a projekt a klasszikus Stratega játék újragondolása oktatási és szórakoztatási célból.
+
+## 🙏 Köszönetnyilvánítás
+
+- Az eredeti Stratega.hu csapatának a klasszikus játékért
+- A közösségnek a hosszú éveken át tartó támogatásért
+
+## 📞 Kapcsolat
+
+- **Projekt**: [GitHub](https://github.com/pixelzsoldos/stratega-reborn/)
+- **Eredeti játék**: [stratega.hu](https://stratega.hu)
 
 ---
 
-## 📜 Licenc
-
-Licencelés később kerül meghatározásra.
-
----
-
-Ha érdekel a játék működése, mindenképp kezdd a **`docs/help.md`** fájllal – ott van a Stratega Reborn lelke.
+**Megjegyzés**: Ez egy fejlesztés alatt álló projekt. A funkciók folyamatosan bővülnek.
