@@ -1,0 +1,29 @@
+Épület neve,Faj,Szükséges GyP,Elkészítési idő (kör),Építési költség Arany,Építési költség Fa,Építési költség Kő,Építési költség Fém,Fenntartás Arany / kör,Fenntartás Gabona / kör,Fenntartás Fa / kör,Fenntartás Kő / kör,Fenntartás Fém / kör,Fenntartás Mana / kör,Leírás
+Akol,Sötételf,0,6,500,200,200,100,0,50,1,1,1,0,240 aranyat adózik körönként
+Barakk,Minden faj,0,10,500,300,300,300,20,0,1,1,1,0,Egységek kiképzése (férőhely: 100)
+Csontvár,Élőholt,25000,12,2000,500,2000,1000,100,0,0,0,0,25,"Élőholt védekező épület. (Fenntartás: 100 arany, 25 Mana/kör, férőhely: 55)"
+Diadalív,Minden faj,100000,16,50000,10000,10000,10000,0,0,0,0,0,0,10 %-kal növeli az adóbevételt körönként
+Dögkút,Élőholt,0,6,500,200,200,100,0,50,1,1,1,0,250 aranyat adózik körönként
+Elf erdő,Elf,25000,8,500,0,200,200,5,0,0,0,0,0,Fát termel (100 fa/kör)
+Elf szántó,Elf,25000,6,500,200,200,300,3,0,1,0,1,0,Gabonát termel (150 gabona/kör)
+Ércbánya,Minden faj,0,8,500,200,200,0,5,0,0,0,0,0,Fémet termel (50 fém/kör)
+Érctárna,Törpe,25000,8,500,200,200,0,5,0,0,0,0,0,Fémet termel (100 fém/kör)
+Erőd,Minden faj,0,12,2000,500,2000,1000,200,0,10,20,20,0,Védekező épület (férőhely: 50)
+Falu,Minden faj,0,6,500,200,200,100,0,50,1,1,1,0,200 aranyat adózik körönként
+Fatelep,Minden faj,0,8,500,0,200,200,5,0,0,0,0,0,Fát termel (50 fa/kör)
+Kincstár,Minden faj,0,6,300,100,100,100,10,0,0,2,2,0,200 000 Aranyat tárol
+Kőbánya,Minden faj,0,8,500,200,0,200,5,0,0,0,0,0,Követ termel (50 kő/kör)
+Könyvtár,Minden faj,0,10,500,200,200,200,50,0,5,0,0,10,Tekercset tárol
+Kőtárna,Törpe,25000,8,500,200,0,200,5,0,0,0,0,0,Követ termel (100 kő/kör)
+Község,Ember,0,6,500,200,200,100,0,50,1,1,1,0,220 aranyat adózik körönként
+Kripta,Élőholt,25000,10,500,300,300,300,10,0,0,0,0,2,"Egységek kiképzése (Fenntartás: 10 arany, 2 Mana/kör, férőhely: 110)"
+Manaforrás,Minden faj,0,12,2000,500,500,500,50,0,1,1,1,0,Manát termel (100 mana/kör)
+Manakút,Sötételf,25000,12,2000,500,500,500,50,0,1,1,1,0,Manát termel (150 mana/kör)
+Ork kaszárnya,Ork,25000,10,500,300,300,300,20,0,1,1,1,0,Egységek kiképzése (férőhely: 150)
+Ork láp,Ork,0,6,500,200,200,100,0,50,1,1,1,0,250 aranyat adózik körönként
+Raktár,Minden faj,0,6,300,100,100,100,0,0,0,0,0,0,"Nyersanyagot raktároz (500 fa, 500 kő, 500 érc, 1000 gabona)"
+Sziklafalvak,Törpe,0,6,500,200,200,100,0,50,1,1,1,0,260 aranyat adózik körönként
+Tanya,Minden faj,0,6,500,200,200,300,5,0,1,0,1,0,Gabonát termel (100 gabona/kör)
+Törpe barlang,Törpe,25000,12,100,0,2000,2000,200,0,0,20,20,0,"Törpe védekező épület. (Fenntartás: 200 arany, 20 kő, 20 érc /kör, Férőhely: 75)"
+Varázslótorony,Minden faj,0,16,10000,1000,1000,1000,400,40,10,10,10,50,Varázslók lakják
+Völgyzugony,Elf,0,6,500,200,200,100,0,50,1,1,1,0,210 aranyat adózik körönként

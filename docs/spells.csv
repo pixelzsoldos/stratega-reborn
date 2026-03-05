@@ -1,0 +1,53 @@
+Tekercs,Faj,Szükséges GyP,Elkészítési idő (kör),Készítés Mana / kör,Készítés Arany / kör,Kimondás Mana,Fenntartás Mana / kör,Max időtartam,Leírás
+Adomány,Minden faj,0,6,100,1500,100,,Pillanatnyi,Kimondásakor azonnal 12000 aranyat kap a célország.
+Agresszivitás,Minden faj,0,6,25,100,10,10,6 kör,Kimondásától egységeid támadása eggyel megnő.
+Áldás,Minden faj,0,6,25,100,10,10,6 kör,Kimondásától egységeid védőértéke eggyel megnő.
+Alkímia,Minden faj,0,8,35,200,20,50,8 kör,Kimondásától alkimistáid 50 mana felhasználásával 2000 aranyat állítanak elő körönként.
+Bányászat,Minden faj,0,6,50,100,10,10,132 kör,Kimondásától nyersanyagtermelésed 5 %-kal magasabb.
+Barlangerőd,Törpe,50000,14,500,5000,100,40,12 kör,"Kimondásától számított 12 körig plusz 1 védőérték,  15 % életerőpont az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Bátorság,Elf,50000,14,500,5000,100,40,12 kör,"Kimondásától számított 12 körig plusz 1 támadóérték, plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Békesség,Elf,25000,12,200,2500,50,20,24 kör,Kimondásától számított 24 körig gabonatermelésed 15 %-kal és nyersanyagtermelésed 5 %-kal magasabb.
+Betegség,Sötételf,25000,12,200,2500,50,20,24 kör,Kimondásától számított 24 körig a célország gabonatermelése 10 %-kal alacsonyabb.
+Csontkemény,Élőholt,25000,9,250,2500,50,20,24 kör,Kimondásától számított 24 körig plusz 2 védőérték minden azonos vagy nagyobb szintű egységnek.
+Égi abrak,Minden faj,0,6,10,100,10,5,48 kör,"Kimondásától számított 48 körig a célországban +10 % gabona, +15 % arany, +10 % fa-kő-fém, kimondása 10 mana +48 GyP, fenntartása körönként 5 manába kerül."
+Egyistenhit,Ember,50000,14,500,5000,100,40,12 kör,"Kimondásától számított 12 körig plusz 2 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Életerő,Minden faj,0,6,25,100,10,10,6 kör,Kimondásától egységeid életereje 10 %-kal megnő.
+Fal,Ember,25000,9,200,2500,50,20,24 kör,"Kimondásától számított 24 körig plusz 1 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Felderítés,Minden faj,0,6,50,100,20,,Pillanatnyi,"Varázslat, a folyamatban lévő háborús cselekmények ellenőrzésére."
+Félelem,Ork,100000,16,1000,10000,150,80,8 kör,Kimondásától számított 8 körig a célországban plusz 2 támadóérték és plusz 2 védőérték minden azonos vagy nagyobb szintű egységnek.
+Fém hangja,Törpe,50000,14,500,5000,100,40,36 kör,Kimondásától számított 36 körig a célországban 50 %-kal hamarabb befejezik az építéseket és a képzéseket.
+Gyógyítás,Ember,100000,16,1000,10000,150,80,8 kör,Kimondásától számított 8 körig 25 %-kal magasabb az azonos vagy nagyobb szintű egység életereje.
+Harmónia,Elf,100000,16,1000,10000,150,80,48 kör,"Kimondásától számított 48 körig gabonatermelésed 25 %-kal , nyersanyagtermelésed 10 %-kal, adóbevételed 5 %-kal magasabb."
+Hit,Elf,100000,16,1000,10000,150,80,8 kör,Kimondásától számított 8 körig plusz 2 támadóérték és plusz 2 védőérték minden azonos vagy nagyobb szintű egységnek.
+Holtadó,Élőholt,25000,12,250,2500,50,20,24 kör,Kimondásától számított 24 körig országodban 10 %-kal nagyobb az adóbevételed.
+Holtak teremtése,Élőholt,100000,16,1000,10000,150,80,8 kör,Kimondásától számított 8 körig a célországban az azonos vagy nagyobb szintű egység 20 %-kal kevesebb életerőponttal rendelkezik.
+Káosz ereje,Sötételf,50000,14,500,5000,100,40,12 kör,Kimondásától számított 12 körig 20 %-kal magasabb az azonos vagy nagyobb szintű egység életereje.
+Kereskedés,Ember,25000,12,200,2500,50,20,24 kör,Kimondásától számított 24 körig országodban 15 %-kal magasabb az adóbevétel és 15 %-kal magasabb a gabonatermelés.
+Lakoma,Minden faj,0,6,25,500,100,,Pillanatnyi,Kimondásakor azonnal 3000 gabona kerül a raktáradba.
+Láthatatlanság,Sötételf,100000,16,1000,10000,150,80,8 kör,"Kimondásától számított 8 körig plusz 1 támadóérték, plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 2 kezdeményezés minden egységnek."
+Öntözés,Ember,50000,14,500,5000,100,40,36 kör,Kimondásától számított 36 körig országodban 25 %-kal magasabb a gabonatermelés.
+Papok Ereje,Törpe,25000,12,200,2500,50,20,24 kör,Kimondásától számított 24 körig plusz 1 védőérték és plusz 10% életerőpont minden az azonos vagy nagyobb szintű egységnek.
+Paralízis,Élőholt,100000,16,1000,10000,150,80,8 kör,"Kimondásától számított 8 körig plusz 1 támadóérték, plusz 2 védőérték az azonos vagy nagyobb szintű egységnek és plusz 2 kezdeményezés minden egységnek."
+Pöröly,Törpe,100000,16,1000,10000,150,80,8 kör,"Kimondásától számított 8 körig plusz 1 támadóérték, plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 2 kezdeményezés minden egységnek."
+Rablás,Ork,25000,12,200,2500,50,20,24 kör,Kimondásától számított 24 körig 50 %-kal nagyobb az esélyed a lebukás nélküli rablásokra.
+Regeneráció,Elf,50000,14,500,5000,100,40,12 kör,Kimondásától számított 12 körig 10 %-kal magasabb az azonos vagy nagyobb szintű egység életereje.
+Sáskajárás,Ork,50000,14,500,5000,100,40,36 kör,Kimondásától számított 36 körig a célországban 15 %-kal kisebb a gabonatermelés.
+Semlegesítés,Minden faj,0,8,150,1500,150,,Pillanatnyi,Semlegesítő varázslat.
+Sötétséggömb,Sötételf,25000,9,200,2500,50,20,24 kör,"Kimondásától számított 24 körig plusz 1 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Szakértelem,Törpe,100000,16,1000,10000,150,80,48 kör,Kimondásától számított 48 körig országodban 25 %-kal nagyobb az adóbevétel és 10 %-kal magasabb a nyersanyagtermelés.
+Szellemjárás,Élőholt,50000,14,500,5000,100,40,12 kör,"Kimondásától számított 12 körig plusz 1 támadóérték, plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Szélvész,Minden faj,0,6,25,100,10,10,6 kör,Kimondásától egységeid kezdeményezése eggyel megnő.
+Szerszámosztás,Minden faj,0,6,25,500,100,,Pillanatnyi,"Kimondásakor azonnal 1000 fa, 1000 kő és 1000 fém kerül a raktáradba."
+Szorgalom,Minden faj,0,6,25,100,10,10,132 kör,Kimondásától 15 %-kal magasabb az adóbevételed.
+Született mágus,Sötételf,50000,14,500,5000,100,40,36 kör,Kimondásától számított 36 körig a célországban 50 %-kal hamarabb befejezik az építéseket és a képzéseket.
+Tábortűz,Ork,50000,14,500,5000,100,40,12 kör,"Kimondásától számított 12 körig plusz 1 támadóérték, plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Taktika,Ember,100000,16,1000,10000,150,80,8 kör,"Kimondásától számított 8 körig plusz 2 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 2 kezdeményezés minden egységnek."
+Távolbalátás,Minden faj,0,6,50,250,10,10,12 kör,Kimondásától 12 körig országlistád kibővíti.
+Temető,Élőholt,50000,14,500,5000,100,40,12 kör,Kimondásától számított 12 körig plusz 1 védőérték és 10 % életerőpont minden azonos vagy nagyobb szintű egységnek.
+Termékenység,Minden faj,0,6,25,100,10,10,132 kör,Kimondásától gabona termelésed 15 %-kal magasabb.
+Tömeg ereje,Ork,100000,16,1000,10000,150,80,8 kör,"Kimondásától számított 8 körig plusz 3 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Tüskebozót,Elf,25000,9,200,2500,50,20,24 kör,"Kimondásától számított 24 körig plusz 1 védőérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
+Varázsfegyver,Törpe,25000,9,200,2500,50,20,24 kör,Kimondásától számított 24 körig plusz 2 támadóérték az azonos vagy nagyobb szintű egységnek.
+Varázsgömb,Minden faj,0,4,50,200,20,,Pillanatnyi,Információszerző varázslat.
+Vasmarok,Sötételf,100000,16,1000,10000,150,80,48 kör,Kimondásától számított 48 körig adóbevételed és gabonatermelésed 25 %-kal magasabb.
+Vérszomj,Ork,25000,9,200,2500,50,20,24 kör,"Kimondásától számított 24 körig plusz 2 támadóérték az azonos vagy nagyobb szintű egységnek, és plusz 1 kezdeményezés minden egységnek."
